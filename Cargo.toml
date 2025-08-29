@@ -1,0 +1,27 @@
+[package]
+name = "boost_url"
+description = "Boost C++ library boost_url packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_url"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_url"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_align = { version = "0.1.0", path = "../boost_align" }
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_mp11 = { version = "0.1.0", path = "../boost_mp11" }
+boost_optional = { version = "0.1.0", path = "../boost_optional" }
+boost_static_assert = { version = "0.1.0", path = "../boost_static_assert" }
+boost_system = { version = "0.1.0", path = "../boost_system" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+boost_variant2 = { version = "0.1.0", path = "../boost_variant2" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
